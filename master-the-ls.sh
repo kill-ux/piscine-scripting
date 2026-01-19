@@ -1,1 +1,1 @@
-ls -Fltu | tr "\n" ","
+ls -Ftu | tr "\n" ","
