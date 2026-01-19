@@ -1,2 +1,2 @@
- curl https://assets.01-edu.org/devops-branch/HeadTail.txt | cat
+ curl https://learn.zone01oujda.ma/assets/devops-branch/HeadTail.txt | (head -1 && tail -1)
 # -s is silent mode to skip the errors 
