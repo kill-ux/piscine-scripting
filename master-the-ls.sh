@@ -1,1 +1,1 @@
-ls -Ftu | tr "\n" ","
+ls -Ftu | tr "\n" "," | sed  "s/,$//"
