@@ -1,1 +1,1 @@
-find . -iname "*.txt" | cut -d "/" -f 3 | cut -d "." -f 1
+find . -iname "*.txt" | grep -o '[^/]*\.txt$' | cut -d "." -f 1
