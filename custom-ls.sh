@@ -1,2 +1,2 @@
-alias custom-ls='ls -lasSo'
+alias custom-ls='ls -asSo'
 
