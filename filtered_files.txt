@@ -1,0 +1,2 @@
+file1.txt
+filtered_files.txt
