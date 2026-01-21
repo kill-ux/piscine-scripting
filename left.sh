@@ -1,1 +1,1 @@
-cat < facts | wc -l
+ wc -l < facts
