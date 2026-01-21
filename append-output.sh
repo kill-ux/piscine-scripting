@@ -1,1 +1,1 @@
-cat songs.txt | grep "\-\sJ.*" >> result.txt
+cat songs.txt | grep "\- J.*" >> results.txt
