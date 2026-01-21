@@ -1,1 +1,1 @@
-ls | grep '.txt$' > filtered_files.txt
+ls | grep '[^.txt$]' > filtered_files.txt
