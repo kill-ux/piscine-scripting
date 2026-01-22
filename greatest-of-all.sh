@@ -1,7 +1,7 @@
 #!/bin/bash
 
 max=0
-for i in {0..10}; do
+for i in {1..10}; do
 		read -p "Enter a number: " num
 		if ! [[ $num =~ ^[0-9]+$ ]]; then
 				echo "ERROR: Invalid input only positive numerical characters are allowed"
