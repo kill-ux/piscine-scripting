@@ -1,9 +1,7 @@
 #!/bin/bash
 
-if [[ $# > 2 ]]; then
+if [[ $# != 2 ]]; then
 		echo "The script only works with two arguments!"
-elif [[ $# < 2 ]]; then
-		echo "Only two numeric arguments are acceptable!"
 elif ! [[ $1 =~ ^[0-9]+$ ]] || ! [[ $2 =~ ^[0-9]+$ ]]; then
 		echo "Only two numeric arguments are acceptable!"
 fi
