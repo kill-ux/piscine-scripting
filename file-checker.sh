@@ -5,7 +5,7 @@ if [[ $# > 1 ]]; then
 fi
 
 if [[ -f $1 ]]; then
-		echo "File is exists"
+		echo "File exists"
 		if [[ -r $1 ]]; then
 			echo "File is readable"
 		else 
