@@ -26,5 +26,5 @@ if [[ -f $1 ]]; then
 			echo "File is not executable"
 		fi
 else 
-		echo "File is not exist"
+		echo "File does not exist"
 fi
