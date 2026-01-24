@@ -1,6 +1,6 @@
 #!/bin/bash
 
-is_number=^[0-9]+$
+is_number='^[0-9]+$'
 
 validate_grad () {
 	if  [[ ! $1 =~ $is_number ]] || [[ $1 -gt 100 ]] ; then
