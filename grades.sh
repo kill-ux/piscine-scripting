@@ -10,13 +10,14 @@ validate_grad () {
 	fi
 }
 
-if [[ $# != 1 ]] || [[ ! $1 =~ $is_number ]] ; then
+if [[ $# != 1 ]] ; then
 	>&2 echo "Error: expect 1 argument only!"
 	exit 1
 fi
 
 
-declare -a results=()
+declare -a results
+
 for  (( element=1; element <= "$1"; element++ )) do
 	read -p "Student Name #$element: " name
 	read -p "Student Grade #$element: " grade
@@ -26,7 +27,7 @@ for  (( element=1; element <= "$1"; element++ )) do
 	fi
 
 	if [[ $grade -ge 90 ]]; then
-		results+=("$name: You did an excellent job!")
+		    results+=("$name: You did an excellent job!")
 	elif [[ $grade -ge 70 ]]; then
 			results+=("$name: You did a good job!")
 	elif [[ $grade -ge 50 ]]; then
