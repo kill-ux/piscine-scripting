@@ -17,7 +17,7 @@ fi
 
 
 for (( i=0; i<5; )); do
-		echo "Enter your guess ( $(expr 5 - $i) tries left)"
+		echo "Enter your guess ($(expr 5 - $i) tries left)"
 		read guess
 	if validate $guess ; then
 		if [[ $guess -gt $1 ]]; then
