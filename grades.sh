@@ -21,7 +21,7 @@ for  (( element=1; element <= "$1"; element++ )) do
 	read -p "Student Name #$element: " name
 	read -p "Student Grade #$element: " grade
 	if ! validate_grad $grade ;then
-		echo "Error: The grade $grade is not a valid input. Only numerical grades between 0 and 100 are accepted."
+		echo "Error: The grade "$grade" is not a valid input. Only numerical grades between 0 and 100 are accepted."
 		exit 1
 	fi
 
