@@ -2,10 +2,10 @@
 
 re=^[+-]?[0-9]+$ 
 
-do_add () { expr $1 + $2 ; }
-do_sub () { expr $1 - $2 ; }
-do_mult () { expr $1 * $2 ; }
-do_divide () { expr $1 / $2 ; }
+do_add () { expr $1 "+" $2 ; }
+do_sub () { expr $1 "-" $2 ; }
+do_mult () { expr $1 "*" $2 ; }
+do_divide () { expr $1 "/" $2 ; }
 
 if [[ $# != 3 ]]; then 
 		>&2 echo "Error: expect 3 arguments"
