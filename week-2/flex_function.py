@@ -1,4 +1,6 @@
-def create_person(first_name, last_name, age = None, gender = None, size=1.83, job="taxidermist"):
+def create_person(
+    first_name, last_name, /, age=32, gender="male", *, size=1.83, job="taxidermist"
+):
     return {
         "first_name": first_name,
         "last_name": last_name,
