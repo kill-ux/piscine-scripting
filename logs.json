@@ -1,7 +1,3 @@
-{
-    "passwords": {
-        "password": "test_password"
-    },
-    "other": "value",
-    "secret": "test_secret"
-}
+"password": "test_password",
+"other": "value",
+"secret": "test_secret"
