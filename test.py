@@ -1,3 +1,3 @@
-from credentials_searches import credentials_search
+from flex_function import create_person
 
-credentials_search()
+create_person()
