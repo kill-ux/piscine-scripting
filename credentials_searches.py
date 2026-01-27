@@ -5,11 +5,19 @@ def credentials_search():
         with open("logs.json") as fd_log:
             data = json.load(fd_log)
             res = {}
-            while isinstance(data, dict) and not (res.get("password") or res.get("secret")):
-                if data.get("password"):
-                    res["password"] = data.get("password")
-                if data.get("secret"):
-                    res["secret"] = data.get("secret")
-            if res :
+            if isinstance(data, dict):
+                res = read_logs(data)
+            if res:
                 with open("credentials.json", "w") as fd_cr:
                     fd_cr.write(json.dumps(res))
+                    
+def read_logs(data):
+    res = {}
+    for key, value in data.items():
+        if key == "password":
+            res["password"] = data.get("password")
+        if data.get("secret"):
+            res["secret"] = data.get("secret")
+        if isinstance(value, dict):
+            res = res | read_logs(value)
+    return res

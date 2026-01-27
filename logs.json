@@ -1,5 +1,7 @@
 {
-  "password": "test_password",
-  "other": "value",
-  "secret": "test_secret"
+    "passwords": {
+        "password": "test_password"
+    },
+    "other": "value",
+    "secret": "test_secret"
 }
