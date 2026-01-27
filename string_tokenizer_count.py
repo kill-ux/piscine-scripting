@@ -2,7 +2,7 @@ import re, string
 
 def tokenizer_counter(str):
     palette = f"[{string.punctuation}]"
-    re.sub(palette, "", str)
+    str = re.sub(palette, "", str)
     str = str.lower()
     res = {}
     for word in str.split():
