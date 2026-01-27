@@ -9,5 +9,5 @@ def merge_two(map1):
         value = input()
         map2[key] = int(value)
     map = map1 | map2
-    json.dumps(map)
+    return json.dumps(map)
     
