@@ -24,3 +24,4 @@ def day_to_number(day):
         "Sunday": 7
     }
     return days.get(day)
+
