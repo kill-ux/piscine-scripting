@@ -1,8 +1,3 @@
-import datetime as dt
-from write_file import to_do
+from hello_python import say_hello_python
 
-to_do_list = [
-    (dt.date(2022, 6, 1), "fix the seat"),
-    (dt.date(2022, 6, 2), "take the trash"),
-]
-to_do(to_do_list)
+print(say_hello_python())
